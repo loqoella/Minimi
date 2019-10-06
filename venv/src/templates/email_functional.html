@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title> Minimi Email Component </title>
+</head>
+
+<body>
+    <!-- for frontend email-sending -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+
+    
+    <!-- for backend email-sending -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+
+    <button id="sendEmailBtn"> Send Email </button>
+
+    <!-- first load django static tag. -->
+    {% load static %}
+    <script src="{% static 'js/email_functional.js' %}"></script>
+
+    
+    
+</body>
+
+
+</html>

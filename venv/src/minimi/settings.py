@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # own
     'minimiApp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

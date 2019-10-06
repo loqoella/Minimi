@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block page_title %}{% endblock %}</title>
+        
+        <!-- first load django static tag. -->
+        {% load static %}
+    
+        <!-- use django static tag to load js file and css file. -->
+        <script src="{% static 'js/home.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    </head>
+
+    <body>
+        {% block page_content %}
+            <h1> minimi HeyHey! </h1>
+        
+        {% endblock %}
+    </body>
+</html>
