@@ -2818,17 +2818,18 @@ end===================
 
 /*======= page title ================*/
 
-
-.page-title {
+/*about*/
+.page-title-about {
     position: relative;
     padding: 45px 0;
-    background-image: url(../images/resource/head1.jpg);
+    background-image: url(../images/resource/smile2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.page-title h2 {
+
+.page-title-about h2 {
     position: relative;
     font-size: 50px;
     color: #fff;
@@ -2836,7 +2837,7 @@ end===================
     padding: 63px 0;
 }
 
-.page-title ul {
+.page-title-about ul {
     position: absolute;
     background: #f8b54d;
     padding: 8px 25px;
@@ -2844,12 +2845,12 @@ end===================
     border-radius: 0 15px;
     z-index: 9;
 }
-.page-title ul li {
+.page-title-about ul li {
     position: relative;
     display: inline-block;
 }
 
-.page-title ul li a {
+.page-title-about ul li a {
     position: relative;
     font-size: 20px;
     padding: 7px 0;
@@ -2858,7 +2859,7 @@ end===================
     color: #fff;
     transition: .5s ease;
 }
-.page-title:before {
+.page-title-about:before {
     content: '';
     position: absolute;
     left: 0px;
@@ -2870,17 +2871,17 @@ end===================
     z-index: 0;
 }
 
-.page-title ul li a:hover {
+.page-title-about ul li a:hover {
     color: #232323;
     transition: .5s ease;
 }
 
-.page-title ul li a:first-child {
+.page-title-about ul li a:first-child {
     margin-right: 17px;
 }
 
 
-.page-title ul li:after {
+.page-title-about ul li:after {
     position: absolute;
     content: '/';
     font-size: 20px;
@@ -2890,7 +2891,468 @@ end===================
     top: 9px;
 
 }
-.page-title ul li:last-child:after {
+.page-title-about ul li:last-child:after {
+    display: none;
+}
+
+/*auburn*/
+.page-title-auburn {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/head1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-auburn h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-auburn ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-auburn ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-auburn ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-auburn:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icons/page-title.png) center center no-repeat;
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-auburn ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-auburn ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-auburn ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-auburn ul li:last-child:after {
+    display: none;
+}
+
+/*campsie*/
+.page-title-campsie {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/head2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-campsie h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-campsie ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-campsie ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-campsie ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-campsie:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icons/page-title.png) center center no-repeat;
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-campsie ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-campsie ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-campsie ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-campsie ul li:last-child:after {
+    display: none;
+}
+
+/*events*/
+.page-title-events {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/pattern1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-events h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-events ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-events ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-events ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-events:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icons/page-title.png) center center no-repeat;
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-events ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-events ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-events ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-events ul li:last-child:after {
+    display: none;
+}
+/*event1*/
+.page-title-event1 {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/pattern3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-event1 h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-event1 ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-event1 ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-event1 ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-event1:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /*background: url(../images/icons/page-title.png)  center no-repeat;*/
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-event1 ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-event1 ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-event1 ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-event1 ul li:last-child:after {
+    display: none;
+}
+
+/*event2*/
+.page-title-event2 {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/head1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-event2 h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-event2 ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-event2 ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-event2 ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-event2:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icons/page-title.png) center center no-repeat;
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-event2 ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-event2 ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-event2 ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-event2 ul li:last-child:after {
+    display: none;
+}
+
+/*event3*/
+.page-title-event3 {
+    position: relative;
+    padding: 45px 0;
+    background-image: url(../images/resource/head1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.page-title-event3 h2 {
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 63px 0;
+}
+
+.page-title-event3 ul {
+    position: absolute;
+    background: #f8b54d;
+    padding: 8px 25px;
+    bottom: -30px;
+    border-radius: 0 15px;
+    z-index: 9;
+}
+.page-title-event3 ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.page-title-event3 ul li a {
+    position: relative;
+    font-size: 20px;
+    padding: 7px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .5s ease;
+}
+.page-title-event3:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/icons/page-title.png) center center no-repeat;
+    background-color: rgba(0,0,0,0.40);
+    z-index: 0;
+}
+
+.page-title-event3 ul li a:hover {
+    color: #232323;
+    transition: .5s ease;
+}
+
+.page-title-event3 ul li a:first-child {
+    margin-right: 17px;
+}
+
+
+.page-title-event3 ul li:after {
+    position: absolute;
+    content: '/';
+    font-size: 20px;
+    font-family: 'bubblegum';
+    color: #fff;
+    right: 0px;
+    top: 9px;
+
+}
+.page-title-event3 ul li:last-child:after {
     display: none;
 }
 
@@ -4244,4 +4706,182 @@ end===================
     margin:20px 20px 20px 20px;
    
 }
+
+.centrecontact{
+    position:relative;
+    padding:100px 0 100px 0;
+}
+
+.centrecontact .modulecontact{
+    position:relative;
+    padding:0px 0px 100px 200px;
+}
+
+.centrecontact .contactblocks{
+    display: inline-block;
+    
+}
+
+.centrecontact .smallblocks{
+    padding:0 55px 0 55px;
+}
+
+.centrecontact .iconpart{
+    display: inline;
+}
+
+.centrecontact .iconpart img{
+    width:80px;
+    padding:20px 0px 20px 0px;
+}
+
+.enrollink{
+    background:url(../images/resource/pattern5.jpg);
+    
+    position: relative;
+    height: 100px;
+    margin:0px 200px 0px 200px;
+}
+.enrollink .enroll{
+    display: inline-block;
+
+}
+
+.enrollink .enroltext{
+    padding: 30px 50px 30px 50px;
+
+}
+
+.enrollink .enrolbutton{
+    padding: 30px 50px 30px 100px;
+    font-size: 30px;
+}
+
+/*Events*/
+.events{
+    position:relative;
+    
+    /*background:url(../images/main-slider/1.jpg);*/
+}
+
+
+.events .eventblogs{
+    position:relative;
+    padding:20px 200px 100px 200px;
+    
+
+}
+
+
+.events .blog{
+    
+    width: 310px;
+    height: 500px;
+    margin: 0 100px 0 100px;
+    display: inline-block;
+    vertical-align:top;
+    
+}
+
+.events .date-time{
+    width: 55px;
+    font-family: helvetica;
+    color: white;
+    text-align:center;
+    background-color:grey;
+    padding: 10px 0 0 0;
+
+}
+
+.events .date-time strong {
+    font-size: 35px;
+}
+
+.events .blogtext{
+    box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px 10px 20px;
+    background: url(../images/resource/pattern4.jpeg);
+
+  
+}
+
+.events .blogtext img{
+    width: 40px;
+    margin: 0 0 0 210px;
+  
+}
+
+
+/*Event1*/
+.event-preschool {
+    position: relative;
+    padding: 100px 0 100px 0;
+    
+}
+.event-preschool .inarow{
+    display:inline-block;
+    vertical-align:top;
+}
+
+/*left*/
+
+.event-preschool .post-content {
+    width: 700px;
+
+}
+
+/*"Welcome to minimi"*/
+.event-preschool .section-title {
+    padding-top: 0px;
+    padding-bottom: 20px;
+   
+}
+
+
+
+/*image*/
+
+.event-preschool .img-box {
+    margin: 0 100px 0px 65px;
+    
+}
+
+/*event 2*/
+
+
+.event-family {
+    position: relative;
+   
+    
+}
+
+.event-family .img-box {
+    margin: 100px 0 0 0;
+    text-align:center;
+  
+}
+.event-family .post-content{
+    
+     padding: 100px 200px 100px 200px;
+}
+
+.event-family .section-title {
+    padding-top: 0px;
+    padding-bottom: 20px;
+   
+}
+
+.event-family .section-text font{
+    font-style: italic;
+    font-family: Lato, sans-serif;
+}
+
+
+
+
+
+
+
+
 
