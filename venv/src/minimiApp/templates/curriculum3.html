@@ -1,29 +1,58 @@
+<!--T1-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+<meta charset="UTF-8">
+<title>Home</title>
 
-    <!-- mobile responsive meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link rel="stylesheet" href="css/common-style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/common-style.css' %}" >
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
+<script src="{% static 'assets/jquery/jquery-1.12.3.min.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'assets/jquery-ui-1.11.4/jquery-ui.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/wow.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/owl.carousel-2/owl.carousel.min.js' %}" type="text/javascript"></script>             
+<script src="{% static 'assets/jquery.bxslider/jquery.bxslider.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery-validation/dist/jquery.validate.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery.mixitup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery.countdown.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/masterslider/masterslider.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/SmoothScroll.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/jquery.themepunch.tools.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/jquery.themepunch.revolution.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.actions.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.carousel.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.kenburn.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.migration.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.navigation.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.parallax.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.slideanims.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.video.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/scrollbar.js' %}" type="text/javascript"></script>    
+<script src="{% static 'js/script.js' %}" type="text/javascript"></script>  
 </head>
-<body class="about-page">
+
+<body class="home-one">
 <div class="preloader"></div>
-
-<!--header-->
-
 <header class="header clearfix">
     <div class="main-header stricky bubble">
         <div class="container">
             <div class="logo pull-left">
                 <a href="home">
-                    <img src="images/resource/minimi_logo.png" width="180"  alt="Awesome Image">
-                    <img src="images/resource/celebrate.jpeg" width="100"  alt="Awesome Image">
+                    <img src="{% static 'images/resource/minimi_logo.png' %}" width="180"  alt="Awesome Image">
+                    <img src="{% static 'images/resource/celebrate.jpeg' %}" width="100"  alt="Awesome Image">
                 </a>
            
             </div>
@@ -53,10 +82,11 @@
                                 <li><a href="home"><font color="#8373ce" >Home</font></a></li>
                                 <li><a href="about"><font color="#F8B54D" >About Us</font></a></li>
                                 <li class="dropdown">
-                                    <a href="centres"><font color="#fc5b4e" >Centres</font></a>
+                                    <!--add id to show the centres module in homepage-->
+                                    <a href="#"><font color="#fc5b4e" >Centres</font></a>
                                     <ul class="submenu">
-                                        <li><a href="auburn"><img src="images/icons/flower1.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e">Auburn Centre</font></a></li>
-                                        <li><a href="campsie"><img src="images/icons/flower2.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e" >Campsie Centre</font></a></li>
+                                        <li><a href="auburn"><img src="{% static 'images/icons/flower1.png' %}" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e">Auburn Centre</font></a></li>
+                                        <li><a href="campsie"><img src="{% static 'images/icons/flower2.png' %}" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e" >Campsie Centre</font></a></li>
                                     </ul>
                                 </li>
                                 <li><a href="events"><font color="#adca69" >Events</font></a></li>
@@ -74,42 +104,104 @@
     </div>
 </header>
 
-<!--page title + small navigation bar--> 
-<section class="page-title-event1 center">
+<section class="page-title-about center">
     <div class="container">
-        <h2>Family Early Education and Care Awards</h2>
+        <h2>Our Curriculum for Babies</h2>
         
     </div>
 
 </section>
 
-<!--Event 2-->
 
-<section class="event-family" >
-    <div class="container" >
-        <div class="img-box">
-            <a href="images/resource/event2-1.png">
-                <img  src="images/resource/event2-1.png" ><br>
-            </a>
+<section class="curriculum1">
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="curriculumblocks">
+                <div class="eachone">
+
+                    <div class="imagepart">
+                        <img alt="" src="{% static 'images/resource/1.png' %}">     
+                    </div>
+
+                    <div class="details">
+                        <h3><a href="class">Happy Kiddo</a></h3>
+					    <p>Admission Close</p>
+					    <div class="clearfix">
+						    <div class="class-meta pull-left">
+							    <span>Years Old</span>
+							    <p>2-3</p>
+						    </div>
+						    <div class="class-meta pull-left">
+							    <span>Class Size</span>
+							    <p>24</p>
+						    </div>
+						    <div class="class-meta pull-left">
+							    <span>Tution Fee</span>
+							    <p>$129</p>
+						    </div>
+					    </div>
+                    </div>
+                </div>
+          
+
+            
+                <div class="eachone">
+
+                   <div class="imagepart">
+                       <img alt="" src="{% static 'images/resource/8.jpg' %}">     
+                   </div>
+
+                   <div class="details">
+                       <h3><a href="class">Happy Kiddo</a></h3>
+				       <p>Admission Close</p>
+					   <div class="clearfix">
+						   <div class="class-meta pull-left">
+						       <span>Years Old</span>
+							   <p>2-3</p>
+						   </div>
+						   <div class="class-meta pull-left">
+							   <span>Class Size</span>
+							   <p>24</p>
+						   </div>
+						   <div class="class-meta pull-left">
+							   <span>Tution Fee</span>
+							   <p>$129</p>
+						   </div>
+					   </div>
+                   </div>
+                </div>
+
+                <div class="eachone">
+
+                   <div class="imagepart">
+                       <img alt="" src="{% static 'images/resource/smile6.jpg' %}">     
+                   </div>
+
+                   <div class="details">
+                       <h3><a href="class">Happy Kiddo</a></h3>
+				       <p>Admission Close</p>
+					   <div class="clearfix">
+						   <div class="class-meta pull-left">
+						       <span>Years Old</span>
+							   <p>2-3</p>
+						   </div>
+						   <div class="class-meta pull-left">
+							   <span>Class Size</span>
+							   <p>24</p>
+						   </div>
+						   <div class="class-meta pull-left">
+							   <span>Tution Fee</span>
+							   <p>$129</p>
+						   </div>
+					   </div>
+                   </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="post-content">
-                
-            <div class="section-title">
-                <font size="2" color="grey" face="Helvetica">9 March 2017</font><br>
-                <font size="4" color="#292929" face="Helvetica"><strong>Our Campsie centre has been nominated in the 2017 Australian Family Early Education and Care Awards in the category of Early Childhood Service of the Year!</strong></font><br><br>
-                <font size="4" color="#292929" face="Helvetica">See the letter from Australian Family below:</font><br>
-            </div>
-            <div class="section-text">
-                <font>Dear MiniMi Academy (Campsie), Congratulations, MiniMi Academy (Campsie) has been nominated in the 2017 Australian Family Early Education and Care Awards in the category of Early Childhood Service of the Year! The Australian Family Early Education & Care Awards are held to publicly recognise Australia’s early childhood professionals. Nominations have been invited from all Australians who know an educator or service deserving of special acknowledgement. To find out more about the Awards, please visit: australianfamily.com.au/earlyeducationandcareawards Awards nominations are open until 10th March 2017. To nominate someone click here. All nominees will have the chance to be judged for the state and national award titles. Around 15th March 2017 you will be invited to prepare a Nominee Submission – a form completed online to provide the judges more information about yourself. It is entirely optional (but must be completed if you wish to be judged for an award) involves answering some questions about your professional practice in line with the EYLF and 7 Quality Areas. The Nominee Submission questions can be found here. This is provided for your information only. It is NOT the actual Nominee Submission form and you cannot use it to submit. Submissions will be open from 16th March – 9th April 2017 only. MiniMi Academy (Campsie), congratulations again on your nomination. You may be contacted by our publicist Adele Feletto to arrange local media coverage. For now there is nothing that you need to do. For further information about the Early Education and Care Awards or to nominate someone whose work in early childhood care deserves recognition, please visit australianfamily.com.au/earlyeducationandcareawards To keep updated with all the Awards news including submission details and finalist announcements, like us on Facebook. Congratulations again! Australian Family</font>
-            </div>
-        </div>    
-        
-    </div>           
+    </div>
 </section>
-
-    <!--FACEBOOK-->
-
 
 <section class="footer">
     <div class="footer-upper">
@@ -259,65 +351,6 @@
         </div>
     </div>
 </section>
-
-
-<!--Scroll to top-->
-<div class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></div>
-
-
-        <!-- jQuery js -->
-    <script src="assets/jquery/jquery-1.12.3.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jQuery ui js -->
-    <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
-
-    <!-- wow js -->
-    <script src="assets/wow.js"></script>
-
-    <!-- owl carousel js -->
-    <script src="assets/owl.carousel-2/owl.carousel.min.js"></script>              <!-- jquery.bxslider js -->
-    <script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <!-- jQuery validation -->
-    <script src="assets/jquery-validation/dist/jquery.validate.min.js"></script>
-    <!-- gmap.js helper -->
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script>-->
-    <!-- gmap.js -->
-    <!--<script src="assets/gmaps.js"></script>-->
-    
-    <!-- mixit u -->
-    <script src="assets/jquery.mixitup.min.js"></script>
-    <script src="assets/isotope.pkgd.min.js"></script>
-    <script src="assets/jquery.countdown.min.js"></script>
-    <script src="assets/masterslider/masterslider.js"></script>
-    <script src="assets/SmoothScroll.js"></script>
-
-    <!-- revolution slider js -->
-    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-    <script src="assets/Polyglot-Language-Switcher-master/js/jquery.polyglot.language.switcher.js"></script>
-    <script src="assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
-    <script src="assets/scrollbar.js"></script>
-    
-    <!--<script src="js/default-map-script.js"></script>-->
-    <script src="js/script.js"></script>
-
-
-
-
-
-
-
 
 </body>
 </html>

@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+<meta charset="UTF-8">
+<title>Home</title>
 
-    <!-- mobile responsive meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <link rel="stylesheet" href="css/common-style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/common-style.css' %}" >
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
 
+<script src="{% static 'assets/jquery/jquery-1.12.3.min.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'assets/jquery-ui-1.11.4/jquery-ui.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/wow.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/owl.carousel-2/owl.carousel.min.js' %}" type="text/javascript"></script>             
+<script src="{% static 'assets/jquery.bxslider/jquery.bxslider.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery-validation/dist/jquery.validate.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery.mixitup.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/isotope.pkgd.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/jquery.countdown.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/masterslider/masterslider.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/SmoothScroll.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/jquery.themepunch.tools.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/jquery.themepunch.revolution.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.actions.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.carousel.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.kenburn.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.migration.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.navigation.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.parallax.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.slideanims.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/revolution/js/extensions/revolution.extension.video.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js' %}" type="text/javascript"></script>
+<script src="{% static 'assets/scrollbar.js' %}" type="text/javascript"></script>    
+<script src="{% static 'js/script.js' %}" type="text/javascript"></script>  
 </head>
 <body class="about-page">
 <div class="preloader"></div>
@@ -22,8 +52,8 @@
         <div class="container">
             <div class="logo pull-left">
                 <a href="home">
-                    <img src="images/resource/minimi_logo.png" width="180"  alt="Awesome Image">
-                    <img src="images/resource/celebrate.jpeg" width="100"  alt="Awesome Image">
+                    <img src="{% static 'images/resource/minimi_logo.png' %}" width="180"  alt="Awesome Image">
+                    <img src="{% static 'images/resource/celebrate.jpeg' %}" width="100"  alt="Awesome Image">
                 </a>
            
             </div>
@@ -53,10 +83,11 @@
                                 <li><a href="home"><font color="#8373ce" >Home</font></a></li>
                                 <li><a href="about"><font color="#F8B54D" >About Us</font></a></li>
                                 <li class="dropdown">
-                                    <a href="centres"><font color="#fc5b4e" >Centres</font></a>
+                                    <!--add id to show the centres module in homepage-->
+                                    <a href="#"><font color="#fc5b4e" >Centres</font></a>
                                     <ul class="submenu">
-                                        <li><a href="auburn"><img src="images/icons/flower1.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e">Auburn Centre</font></a></li>
-                                        <li><a href="campsie"><img src="images/icons/flower2.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e" >Campsie Centre</font></a></li>
+                                        <li><a href="auburn"><img src="{% static 'images/icons/flower1.png' %}" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e">Auburn Centre</font></a></li>
+                                        <li><a href="campsie"><img src="{% static 'images/icons/flower2.png' %}" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e" >Campsie Centre</font></a></li>
                                     </ul>
                                 </li>
                                 <li><a href="events"><font color="#adca69" >Events</font></a></li>
@@ -111,46 +142,46 @@
                         <ul class="list">
                             
                             <li>In Relation to Children We Believe</li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children learn through play.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;All children have a right to a high quality of care.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve opportunities to become involved in centre life alongside their families and peers.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;All children have rights that we must always acknowledge and respect.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve a well-balanced diet for their growth for their strong sense of wellbeing and developmental needs.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children have the right to appreciate their cultural background and religious beliefs.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve to have qualified educators at our centre to ensure a high quality curriculum in their environment.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children have the right to be heard and have a strong sense of identity.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children have a right to have rich, educational, resourceful, safe, trusting and stimulating opportunities for decision making and choice by being effective communicators.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children should get opportunities to develop their music, language, visual arts, social and emotional, fine motor skills, gross motor skills by being a confident and capable learners.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve opportunities to investigate, explore the world around them.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve a curriculum that is capturing their initial interests and development.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children deserve to be open to a non-rushed routine, they deserve time to finish tasks at a suitable pace and should have opportunities to re-visit tasks.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;Children should get the opportunity to engage and be known to the local community, where children with and contribute to their world.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;All Children have a right to be treated fair and equitably.<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children learn through play.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;All children have a right to a high quality of care.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve opportunities to become involved in centre life alongside their families and peers.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;All children have rights that we must always acknowledge and respect.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve a well-balanced diet for their growth for their strong sense of wellbeing and developmental needs.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children have the right to appreciate their cultural background and religious beliefs.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve to have qualified educators at our centre to ensure a high quality curriculum in their environment.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children have the right to be heard and have a strong sense of identity.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children have a right to have rich, educational, resourceful, safe, trusting and stimulating opportunities for decision making and choice by being effective communicators.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children should get opportunities to develop their music, language, visual arts, social and emotional, fine motor skills, gross motor skills by being a confident and capable learners.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve opportunities to investigate, explore the world around them.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve a curriculum that is capturing their initial interests and development.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children deserve to be open to a non-rushed routine, they deserve time to finish tasks at a suitable pace and should have opportunities to re-visit tasks.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;Children should get the opportunity to engage and be known to the local community, where children with and contribute to their world.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;All Children have a right to be treated fair and equitably.<br><br>
                             <li>In Relation To Families</li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe to build trust with families.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families are to be heard.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe all families are welcome to share their cultures and religions.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We strive to support families individualized needs.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe in the importance of networking and sound communication.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families deserve our time and support.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families should be treated fairly and equitably.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families deserve to participate within our curriculum framework (EYLF).<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families deserve to have space within our service that gives them a sense of belonging.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe families deserve to feel their child is safe whilst at care.<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe to build trust with families.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families are to be heard.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe all families are welcome to share their cultures and religions.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We strive to support families individualized needs.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe in the importance of networking and sound communication.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families deserve our time and support.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families should be treated fairly and equitably.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families deserve to participate within our curriculum framework (EYLF).<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families deserve to have space within our service that gives them a sense of belonging.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe families deserve to feel their child is safe whilst at care.<br><br>
                             <li>In Relation to Educators</li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe that educators should be heard.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe environments act as a third teacher.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe all educators acknowledge our centre philosophy.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe that professional development for our educators is essential to keep in with current practices of early childhood, team unity, motivation, and quality of care given for all.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe all our educators have individualised attributes to contribute to our team at our centre.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe all our educators to be reliable, punctual, respectful, and passionate towards the field of early childhood.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe the relationships we have with children are to be purely authentic.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe educators to explore all opportunities for learning and growth within the classroom by allowing children to be capable and competent learners.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe as early childhood professionals we should aim to be an advocate for children and the specialty of this industry.<br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe that educators should be heard.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe environments act as a third teacher.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe all educators acknowledge our centre philosophy.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe that professional development for our educators is essential to keep in with current practices of early childhood, team unity, motivation, and quality of care given for all.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe all our educators have individualised attributes to contribute to our team at our centre.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe all our educators to be reliable, punctual, respectful, and passionate towards the field of early childhood.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe the relationships we have with children are to be purely authentic.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe educators to explore all opportunities for learning and growth within the classroom by allowing children to be capable and competent learners.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe as early childhood professionals we should aim to be an advocate for children and the specialty of this industry.<br><br>
                             <li>In Relation to the Community</li>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe the community is seen as a teacher to all.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe the community is an active tool/resource for children to learn, investigate and explore the environments. - We believe that we can educate the community about the importance of early childhood and the capabilities and competencies that children have in society.<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/star5.png" width="20" alt="">&nbsp;&nbsp;We believe that our community is an asset to our centre and the education of young children in our care where children will contribute their ideas to the world.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe the community is seen as a teacher to all.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe the community is an active tool/resource for children to learn, investigate and explore the environments. - We believe that we can educate the community about the importance of early childhood and the capabilities and competencies that children have in society.<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/star5.png' %}" width="20" alt="">&nbsp;&nbsp;We believe that our community is an asset to our centre and the education of young children in our care where children will contribute their ideas to the world.<br>
                         </ul>
                         
                     </div>
@@ -199,7 +230,7 @@
                 <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-offset="0" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;">
                     <figure class="img-box">
                         <br><br><br><br><br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/dumbo.jpeg" alt=""></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/dumbo.jpeg' %}" alt="">
                     </figure>
                 </div>
                             
@@ -229,7 +260,7 @@
         </div>
     </div>
 </section>
-<img src="images/resource/color3.png" width="100%" height="10" id="EDU">
+<img src="{% static 'images/resource/color3.png' %}" width="100%" height="10" id="EDU">
 
     <!--Our Educators-->
 <section class="aboutus-EDU" >
@@ -258,14 +289,14 @@
             <div class="single-column col-md-6 col-sm-12">  
                 <div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-offset="0" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;">
                     <figure class="img-box">
-                        <a href="#"><img src="images/resource/edu1.jpg" alt=""></a>
+                        <a href="#"><img src="{% static 'images/resource/edu1.jpg' %}" alt=""></a>
                     </figure>
                 </div> 
             </div>
         </div>
     </div>           
 </section>
-<img src="images/resource/color3.png" width="100%" height="10"  id="auburn">
+<img src="{% static 'images/resource/color3.png' %}" width="100%" height="10"  id="auburn">
 
 <section class="aboutus-auburn">
     <div class="container">
@@ -289,13 +320,13 @@
                         <font size="4" color="#fBb54d" face="arial"><b>The National Quality Framework includes:</b></font><br>
                         <ul class="list">
                             
-                            <li><img src="images/resource/star4.png" width="20" alt="">&nbsp;&nbsp;A national legislative framework that consists of the Education and Care Services National Law Act 2010 and Education and Care Services National Regulations 2011</li><br>
+                            <li><img src="{% static 'images/resource/star4.png' %}" width="20" alt="">&nbsp;&nbsp;A national legislative framework that consists of the Education and Care Services National Law Act 2010 and Education and Care Services National Regulations 2011</li><br>
                             
-                            <li><img src="images/resource/star4.png" width="20" alt="">&nbsp;&nbsp;A National Quality Standard</li><br>
+                            <li><img src="{% static 'images/resource/star4.png' %}" width="20" alt="">&nbsp;&nbsp;A National Quality Standard</li><br>
                             
-                            <li><img src="images/resource/star4.png" width="20" alt="">&nbsp;&nbsp;An assessment and rating system</li><br>
+                            <li><img src="{% static 'images/resource/star4.png' %}" width="20" alt="">&nbsp;&nbsp;An assessment and rating system</li><br>
                             
-                            <li><img src="images/resource/star4.png" width="20" alt="">&nbsp;&nbsp;A Regulatory Authority in each State and Territory who will have primary responsibility for the approval, monitoring and quality assessment of services in their jurisdiction in accordance with the national legislative framework and in relation to the National Quality Standard.</li><br>
+                            <li><img src="{% static 'images/resource/star4.png' %}" width="20" alt="">&nbsp;&nbsp;A Regulatory Authority in each State and Territory who will have primary responsibility for the approval, monitoring and quality assessment of services in their jurisdiction in accordance with the national legislative framework and in relation to the National Quality Standard.</li><br>
             
                         </ul>
                         <font size="4" color="#292929" face="arial">For more information about ACECQA and its functions go to www.acecqa.gov.au</font>
@@ -307,7 +338,7 @@
             <div class="single-column col-md-6 col-sm-12">  
                 <div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-offset="0" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;">
                     <figure class="img-box">
-                        <img src="images/resource/auburn1.jpg">
+                        <img src="{% static 'images/resource/auburn1.jpg' %}">
                     </figure>
                 </div> 
             </div>
@@ -315,7 +346,7 @@
     </div>           
 </section>
 
-<img src="images/resource/color3.png" width="100%" height="10" id="sun" >
+<img src="{% static 'images/resource/color3.png' %}" width="100%" height="10" id="sun" >
 
     <!--Sun smart centre-->
 
@@ -374,7 +405,7 @@
                 <div class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-offset="0" style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: fadeIn;">
                     <figure class="img-box">
                         <br><br><br><br><br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/resource/sun1.jpg" alt=""></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'images/resource/sun1.jpg' %}" alt=""></a>
                     </figure>
                 </div>
                             
@@ -399,7 +430,7 @@
     </div>
 </section>
  
-<img src="images/resource/color3.png" width="100%" height="10">     
+<img src="{% static 'images/resource/color3.png' %}" width="100%" height="10">     
 
 <section class="footer">
     <div class="footer-upper">
@@ -549,64 +580,6 @@
         </div>
     </div>
 </section>
-
-<!--Scroll to top-->
-<div class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></div>
-
-
-        <!-- jQuery js -->
-    <script src="assets/jquery/jquery-1.12.3.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- jQuery ui js -->
-    <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
-
-    <!-- wow js -->
-    <script src="assets/wow.js"></script>
-
-    <!-- owl carousel js -->
-    <script src="assets/owl.carousel-2/owl.carousel.min.js"></script>              <!-- jquery.bxslider js -->
-    <script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
-    <!-- jQuery validation -->
-    <script src="assets/jquery-validation/dist/jquery.validate.min.js"></script>
-    <!-- gmap.js helper -->
-    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script>-->
-    <!-- gmap.js -->
-    <!--<script src="assets/gmaps.js"></script>-->
-    
-    <!-- mixit u -->
-    <script src="assets/jquery.mixitup.min.js"></script>
-    <script src="assets/isotope.pkgd.min.js"></script>
-    <script src="assets/jquery.countdown.min.js"></script>
-    <script src="assets/masterslider/masterslider.js"></script>
-    <script src="assets/SmoothScroll.js"></script>
-
-    <!-- revolution slider js -->
-    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
-
-    <script src="assets/Polyglot-Language-Switcher-master/js/jquery.polyglot.language.switcher.js"></script>
-    <script src="assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
-    <script src="assets/scrollbar.js"></script>
-    
-    <!--<script src="js/default-map-script.js"></script>-->
-    <script src="js/script.js"></script>
-
-
-
-
-
-
-
 
 </body>
 </html>

@@ -22,7 +22,7 @@ from .views import (
 
 app_name = 'products'
 urlpatterns = [
-    path('', home_view, name='home'),
+    path('home', home_view, name='home'),
     path('about', about_view, name='about' ),
     path('auburn', auburn_view, name='auburn' ),
     path('campsie', campsie_view, name='campsie' ),
