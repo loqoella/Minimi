@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import (
-    home_view, 
+    home_view,
+    homepage_view,
     email_view,
     about_view,
     auburn_view,
@@ -22,7 +23,8 @@ from .views import (
 
 app_name = 'products'
 urlpatterns = [
-    path('home', home_view, name='home'),
+    path('', home_view, name='home'),
+    path('home', homepage_view, name='homepage'),
     path('about', about_view, name='about' ),
     path('auburn', auburn_view, name='auburn' ),
     path('campsie', campsie_view, name='campsie' ),

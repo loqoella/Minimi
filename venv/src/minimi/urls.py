@@ -19,7 +19,7 @@ from django.urls import include, path
 # from minimiApp.views import home_view
 
 urlpatterns = [
-     path('', include('minimiApp.urls')),
+    path('', include('minimiApp.urls')),
     path('admin/', admin.site.urls),
 
     # path('', home_view, name='home'),

@@ -5,7 +5,13 @@ from rest_framework.decorators import api_view
 import yagmail
 
 # Create your views here.
+
 def home_view(request, *args, **kwargs): # *args, **kwargs
+    print(args, kwargs)
+    print(request.user)
+    return render(request, "home.html", {})
+
+def homepage_view(request, *args, **kwargs): # *args, **kwargs
     print(args, kwargs)
     print(request.user)
     return render(request, "home.html", {})
