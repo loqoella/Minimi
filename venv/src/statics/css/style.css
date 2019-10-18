@@ -95,8 +95,6 @@ header .main-header .header-top {
 }
 
 
-
-
 .header-top .contact {
     position: relative;
     display: inline-block;
@@ -110,183 +108,6 @@ header .main-header .header-top {
     padding-right: 10px;
 
 }
-
-.header-top .register {
-    position: relative;
-    display: inline-block;
-    padding: 19px 20px;
-}
-
-.header-top .register a {
-    font-size: 16px;
-    color: #999;
-    font-family: 'dosis';
-}
-
-
-
-.header-top #polyglotLanguageSwitcher {
-    position: relative;
-    display: inline-block;
-    margin-right: 9px;
-    padding: 17px 0;
-
-}
-
-#polyglotLanguageSwitcher a.current:link,
-#polyglotLanguageSwitcher a.current:visited,
-#polyglotLanguageSwitcher a.current:active {
-    background-color: transparent;
-    border: none;
-    border-radius: 0px;
-    height: auto;
-    font-size: 16px;
-    color: #999;
-    font-family: 'dosis';
-}
-
-
-#polyglotLanguageSwitcher span.trigger:before {
-    position: absolute;
-    left: -25px;
-    top: 9px;
-    content: "\f107";
-    font-size: 12px;
-    color: #999;
-    font-family: FontAwesome;
-}
-
-
-header .main-header .header-top .top-search {
-    position: relative;
-    padding: 19.5px 20px;
-    cursor: pointer;
-    display: inline-block;
-
-}
-
-
-.header-top .contact:after,
-.header-top .register:after,
-.header-top #polyglotLanguageSwitcher:after,
-.main-header .header-top .cart:after,
-.main-header .header-top .top-search:after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    height: 65px;
-    width: 1px;
-    background: #f7f7f7;
-}
-
-
-.main-header .header-top .top-search span.search:before {
-    color: #232323;
-    font-size: 17px;
-    margin: 0;
-}
-
-
-.main-header .header-top .cart a span.count {
-    background: #67c52b;
-    padding: 2px 5px;
-    border-radius: 50%;
-    top: -10px;
-    font-weight: 600;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    left: -8px;
-    font-size: 10px;
-}
-
-.main-header .header-top .top-search .search-box {
-  position: absolute;
-  width: 250px;
-  background: #ff9a00;
-  top: 100%;
-  right: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding: 10px;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease-in;
-  z-index: 9999;
-}
-
-.main-header .header-top .top-search:hover .search-box {
-    transition: .5s ease-in-out;
-    visibility: visible;
-    opacity: 1;
-
-}
-
-.main-header .header-top .top-search .search-box form {
-  background: #fff;
-}
-
-.main-header .header-top .top-search .search-box li {
-  list-style: none;
-}
-
-.main-header .header-top .top-search .search-box li input {
-  width: 78%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  height: 40px;
-  padding-left: 15px;
-  color: #666;
-}
-
-.main-header .header-top .top-search .search-box li input::-webkit-input-placeholder {
-   color: #999;
-   font-weight: normal;
-   font-family: 'Raleway', sans-serif;
-   font-size: 14px;
-}
-
-.main-header .header-top .top-search .search-box li input:-moz-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
-.main-header .header-top .top-search .search-box li input:-ms-input-placeholder {
-    color: #999;
-    font-weight: normal;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}    
-
-.main-header .header-top .top-search .search-box li button {
-  background: none;
-  outline: none;
-  color: #A9A9A9;
-  border: none;
-  width: 30px;
-  height: 40px;
-  margin-right: 5px;
-}
-
-
-
-.main-header .header-top .cart {
-    position: relative;
-    display: inline-block;
-    top: 1px;
-    padding: 18.5px 20px;
-}
-
-.main-header .header-top .cart a span {
-    position: relative;
-    color: #232323;
-}
-
-
 
 
 
@@ -362,9 +183,6 @@ header .main-header .header-top .top-search {
     padding: 6px 10px;
 }
 
-.main-header.style-2 .navbar .navbar-collapse > ul.right-box > li > a > .shop {
-    position: relative;
-}
 .main-header.style-2 .navbar .navbar-collapse > ul.right-box > li > a > span.count {
     width: 15px;
     height: 15px;
@@ -1237,16 +1055,10 @@ end===================
 
 .footer {
     position: relative;
-    /*
-    background:url(../images/main-slider/little-kids.png) center center no-repeat;
-        */
-    
 }
 
 
 /*upper*/
-
-
 
 .footer .footer-upper {
     position: relative;
@@ -1265,452 +1077,27 @@ end===================
 .footer .footer-bottom {
     position: relative;
     float:left;
-    padding: 0 0 200px 300px;
-    background:url(../images/overly/gallery.png) center center no-repeat;
-   
-}
-
-
-.footer .footer-bottom  .footermenu > li{
-    display:inline;
-    color: #8373ce;
-    margin-right:60px;
-   
+    padding: 20px 0 0 300px;
     
- 
+   
 }
 
-.footer .footerbb {
-    position: relative;
-    text-align:center;
-    padding: 100px 0 0 0;
-    background:url(../images/main-slider/little-kids.png) center center no-repeat;
-}
-/*** 
-
-====================================================================
-    footer-style-2 style
-====================================================================
-
-***/
-
-
-
-.footer-style-2 {
-    position: relative;
-    background: #e3f7ff;
-    padding: 105px 0 230px;
-    margin-top: 120px;
-}
-.footer-style-2 .footer-upper {
-    position: relative;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f1fbff;
+.footer .footer-bottom{
+    background:url(../images/main-slider/little-kids.png)center  center no-repeat;
+    height:300px;
 }
 
-.footer-style-2:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 832px;
-    background: url(../images/overly/footer-style2.png) center bottom no-repeat;
-    z-index: 0;
-}
-
-.footer-style-2 .column-title h2 {
-    position: relative;
-    text-transform: capitalize;
-    font-size: 28px;
-    color: #ec4f74;
-    padding-bottom: 13px;
-    margin-bottom: 26px;
-}
-
-.footer-style-2 .column-title h2:after {
-    position: absolute;
-    content: "";
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 10px;
-    background: url(../images/icons/sep-3.png) center left no-repeat;
-}
-
-
-.footer-style-2 .footer-widget-about .content p {
-    position: relative;
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 24px;
-}
-
-.footer-style-2 .footer-widget-about .content ul li {
-    position: relative;
-    overflow: hidden;
-    padding: 12px 0;
-}
-
-
-.footer-style-2 .footer-widget-about .content ul li a {
-    position: relative;
-    font-size: 15px;
-    font-family: 'dosis';
-    color: #888;
-    float: left;
-}
-
-.footer-style-2 .footer-widget-about .content ul li span {
-    position: relative;
-    margin-right: 20px;
-    font-size: 17px;
-    float: left;
-    top: 2px;
-}
-
-/*link-widget*/
-
-
-.footer-style-2 .news-column {
-    padding-bottom: 20px;
-}
-
-.footer-style-2 .news-column .news-post{
-    position:relative;
-    padding:7px 0px 0px 100px;
-    margin-bottom:35px;
-    color:#888;
-    line-height:20px;
-}
-
-
-.footer-style-2 .news-column .news-post a {
-    position:relative;
-    color:#232323;
-    font-size: 18px;
-    transition: .5s ease;
-}
-
-.footer-style-2 .news-column .news-post .time{
-    position:relative;
-    color:#888;
-    font-size:13px;
-    font-family: 'dosis-medium';
-    margin-top: 5px;
-}
-
-.footer-style-2 .news-column .news-post .image-thumb{
-    position:absolute;
-    left:0px;
-    top:0px;
-}
-
-.footer-style-2 .news-column .news-post .image-thumb img{
-    width: auto;
-}
-
-
-
-/*quick link*/
-.footer-style-2 .links-column {
-    margin-bottom:30px;
-}
-.footer-style-2 .links-column .column-title h2 {
-    margin-bottom: 28px;
-}
-
-.footer-style-2 .links-column li{
-    position:relative;
-    margin-bottom:11px;
-}
-
-.footer-style-2 .links-column li a{
-    position:relative;
-    display:block;
-    font-size:16px;
-    color:#888;
-    transition: .5s ease;
-    font-family: 'dosis-medium';
-}
-
-.footer-style-2 .links-column li a:hover {
-    color:#8373ce;
-    transition: .5s ease;  
-}
-
-
-/*instagram*/
-
-.footer-style-2 .instagram {
-    position: relative;
-    overflow: hidden;
-    margin: 0 -5px;
-
-}
-
-.footer-style-2 .instagram .img-box {
-    position: relative;
-    float: left;
-    margin: 0 5px 10px;
-}
-/*coppy-right*/
-.footer-style-2 .coppy-right {
-    position: relative;
-    line-height: 70px;
-    font-size: 14px;
-    color: #888;
-}
-
-/*socialicon*/
-
-
-
-.footer-style-2 .social {
-    text-align: center;
-}
-.footer-style-2 .social,
-.footer-style-2 .pull-right p {
-    display: table-cell;
-    padding-right: 16px;
-}
-
-.footer-style-2 .pull-right p {
-    font-size: 16px;
-    color: #888;
-}
-
-.footer-style-2 .social li {
+.footer .footer-bottom .footermenu li{
     display: inline-block;
-    margin-right: 11px;
+    margin-right: 60px;
 }
 
 
-
-
-.footer-style-2 .social li a {
-    color: #888;
-    line-height: 30px;
-    font-size: 13px;
-    transition: .5s ease-in-out;
+.footer .copyright {
+   
+    margin: 230px 0 0 200px;
+   
 }
-
-.footer-style-3 .social li a:hover {
-    color: #8373ce;
-    transition: .5s ease-in-out;
-}
-
-/*=====footer-style-3*/
-
-.footer-style-3 {
-    position: relative;
-    padding: 120px 0 0;
-    margin-top: 250px;
-    background: #7ac3ac;
-}
-
-.footer-style-3:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: -200px;
-    width: 100%;
-    height: 227px;
-    background: url(../images/overly/footer-style3.png) center top no-repeat;
-    z-index: 0;
-}
-
-
-.footer-style-3 .footer-upper {
-    position: relative;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f1fbff;
-}
-
-
-
-.footer-style-3 .column-title h2 {
-    position: relative;
-    text-transform: capitalize;
-    font-size: 28px;
-    color: #fff;
-    padding-bottom: 13px;
-    margin-bottom: 26px;
-}
-
-.footer-style-3 .column-title h2:after {
-    position: absolute;
-    content: "";
-    left: 0px;
-    bottom: 0px;
-    width: 100%;
-    height: 10px;
-    background: url(../images/icons/sep-2.png) center left no-repeat;
-}
-
-
-.footer-style-3 .footer-widget-about .content p {
-    position: relative;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 24px;
-}
-
-.footer-style-3 .footer-widget-about .content ul li {
-    position: relative;
-    overflow: hidden;
-    padding: 12px 0;
-}
-
-
-.footer-style-3 .footer-widget-about .content ul li a {
-    position: relative;
-    font-size: 15px;
-    font-family: 'dosis';
-    color: #fff;
-    float: left;
-}
-
-.footer-style-3 .footer-widget-about .content ul li span {
-    position: relative;
-    margin-right: 20px;
-    font-size: 17px;
-    float: left;
-    top: 2px;
-    color: #fff;
-}
-
-/*link-widget*/
-
-
-.footer-style-3 .news-column {
-    padding-bottom: 20px;
-}
-
-.footer-style-3 .news-column .news-post{
-    position:relative;
-    padding:7px 0px 0px 100px;
-    margin-bottom:35px;
-    color:#fff;
-    line-height:20px;
-}
-
-
-.footer-style-3 .news-column .news-post a {
-    position:relative;
-    color:#fff;
-    font-size: 18px;
-    transition: .5s ease;
-}
-
-.footer-style-3 .news-column .news-post .time{
-    position:relative;
-    color:#fff;
-    font-size:13px;
-    font-family: 'dosis-medium';
-    margin-top: 5px;
-}
-
-.footer-style-3 .news-column .news-post .image-thumb{
-    position:absolute;
-    left:0px;
-    top:0px;
-}
-
-.footer-style-3 .news-column .news-post .image-thumb img{
-    width: auto;
-}
-
-
-
-/*quick link*/
-.footer-style-3 .links-column {
-    margin-bottom:30px;
-}
-.footer-style-3 .links-column .column-title h2 {
-    margin-bottom: 28px;
-}
-
-.footer-style-3 .links-column li{
-    position:relative;
-    margin-bottom:11px;
-}
-
-.footer-style-3 .links-column li a{
-    position:relative;
-    display:block;
-    font-size:16px;
-    color:#fff;
-    transition: .5s ease;
-    font-family: 'dosis-medium';
-}
-
-.footer-style-3 .links-column li a:hover {
-    color:#232323;
-    transition: .5s ease;  
-}
-
-
-/*instagram*/
-
-.footer-style-3 .instagram {
-    position: relative;
-    overflow: hidden;
-    margin: 0 -5px;
-
-}
-
-.footer-style-3 .instagram .img-box {
-    position: relative;
-    float: left;
-    margin: 0 5px 10px;
-}
-/*coppy-right*/
-.footer-style-3 .coppy-right {
-    position: relative;
-    line-height: 70px;
-    font-size: 14px;
-    color: #fff;
-}
-
-/*socialicon*/
-
-
-
-.footer-style-3 .social {
-    text-align: center;
-}
-.footer-style-3 .social,
-.footer-style-3 .pull-right p {
-    display: table-cell;
-    padding-right: 16px;
-}
-
-.footer-style-3 .pull-right p {
-    font-size: 16px;
-    color: #fff;
-}
-
-.footer-style-3 .social li {
-    display: inline-block;
-    margin-right: 11px;
-}
-
-
-
-
-.footer-style-3 .social li a {
-    color: #fff;
-    line-height: 30px;
-    font-size: 13px;
-    transition: .5s ease-in-out;
-}
-
-.footer-style-3 .social li a:hover {
-    color: #232323;
-    transition: .5s ease-in-out;
-}
-
 
 
 /*** 
@@ -4880,8 +4267,101 @@ end===================
 
 
 
+/*curriculum*/
+
+.curriculum1{
+    padding: 110px 0 84px 0;
+    position: relative;
+    
+}
 
 
+.curriculum1 .curriculumblocks{
+    position: relative;
+    margin: 0 -20;
+    width: 1180px;
+}
+.curriculum1 .eachone{
+    margin-bottom: 36px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+   
+}
+.curriculum1 .imagepart{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.curriculum1 .imagepart img {
+    border-radius: 20px 20px 0 0;
+    width: 350.06px;
+    height:230px;
+
+}
 
 
+.curriculum1 .details{
+    text-align: center;
+    background: #f2f5f9;
+    box-shadow: 0 6px #eaecf1;
+    border-radius: 0px 0px 10px 10px;
+    padding: 30px 35px;
+}
+.curriculum1 .details h3 a{
+    font-size: 28px;
+    color: #8A7BD1;
+}
+.curriculum1 .details p{
+    font-size: 14px;
+    color: #727375;
+    margin: 10px 0 0;
+}
+.curriculum1 .class-meta {
+    margin-top: 43px;
+    text-align: left;
+    border-left: 1px solid #dcdfe3;
+    padding: 0 22px;
+}
+.curriculum1 .class-meta:first-of-type{
+    padding-left: 0;
+    border: none;
+}
+.curriculum1 .class-meta:last-of-type{
+    padding-right: 0;
+}
+.curriculum1 .class-meta span{
+    color: #727375;
+    display: inline-block;
+    font-size: 14px;
+}
+.curriculum1 .class-meta p{
+    color: #92278f;
+    font-size: 18px;
+    margin: 6px 0 0;
+}
 
+
+/*Enrolment*/
+
+.enrolform{
+    padding: 100px 0 100px 0;
+    position: relative;
+}
+
+.enrolform .formstyle{
+    margin: 0 300px 0 300px;
+}
+
+.enrolform .title h2{
+    text-align: center;
+    margin:0 0 50px 0;
+    color: #8A7BD1;
+}
+
+.enrolform .buttonsubmit{
+    text-align: center;
+}

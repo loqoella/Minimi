@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="css/common-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body class="about-page">
+<div class="preloader"></div>
+
+<!--header-->
+
+<header class="header clearfix">
+    <div class="main-header stricky bubble">
+        <div class="container">
+            <div class="logo pull-left">
+                <a href="home">
+                    <img src="images/resource/minimi_logo.png" width="180"  alt="Awesome Image">
+                    <img src="images/resource/celebrate.jpeg" width="100"  alt="Awesome Image">
+                </a>
+           
+            </div>
+
+            <div class="nav-outer">
+                <div class="header-top">
+                    <div class="contact">
+                        <span class="icon fa fa-phone"></span><font color="#8373ce">Phone: 02 9648 6588&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: minimiauburn@gmail.com</font>
+                    </div>
+                </div>
+
+                <!--Navigation-->
+                <nav class="mainmenu-area">
+                    <div class="navbar" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                        </div>
+                        <!--navigation content-->
+                        <div class="navbar-collapse collapse text-center">  
+                            <ul>
+                                <li><a href="home"><font color="#8373ce" >Home</font></a></li>
+                                <li><a href="about"><font color="#F8B54D" >About Us</font></a></li>
+                                <li class="dropdown">
+                                    <a href="centres"><font color="#fc5b4e" >Centres</font></a>
+                                    <ul class="submenu">
+                                        <li><a href="auburn"><img src="images/icons/flower1.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e">Auburn Centre</font></a></li>
+                                        <li><a href="campsie"><img src="images/icons/flower2.png" width="32">&nbsp;&nbsp;&nbsp;<font color="#fc5b4e" >Campsie Centre</font></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="events"><font color="#adca69" >Events</font></a></li>
+                                <li><a href="curriculum"><font color="#35a3f0" >Curriculum</font></a></li>
+                                <li><a href="flexible"><font color="#c66196" >Flexible Hours</font></a></li>
+                                <li><a href="enrolment"><font color="#84bed6">Enrolment/Contact Us</font></a></li>
+
+                            </ul>  
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<section class="page-title-events center">
+    <div class="container">
+        <h2>Enrolment<br />Contact us</h2>
+        <ul>
+            <li><a href="#enrol">Enrolment</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            
+        </ul>
+    </div>
+</section>
+
+
+
+<section class="enrolform" id="enrol">
+
+    <div class="formstyle">
+        <div class="title">
+           
+            <h2 >Enrolment&nbsp;&nbsp;Form</h2>
+         </div>
+    
+        <form>
+        <!--centre-->
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Which Centre you want to enrol</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected> </option>
+              <option>Auburn Centre</option>
+              <option>Campsie Centre</option>    
+            </select>
+        </div>
+        <!--Child Name-->
+        <div class="form-group">
+            <label for="childname">Child's Name</label>
+            <input type="text" class="form-control" id="childname" placeholder="child's name">
+        </div>
+        <!--Child Gender-->
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Gender</label>
+            <p>
+	            <img src="images/icons/boy.png" width="20">Boy: <input type="radio" name="gender" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="images/icons/girl.png" width="20">Girl: <input type="radio" name="gender" /> 
+            </p>
+           
+        </div>
+        <!--Child Age-->
+        <div class="form-group">
+            <label for="exampleFormControlSelect3">Child's Age</label>
+            <select class="form-control" id="exampleFormControlSelect3">
+                <option selected> </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>   
+            </select>
+        </div>
+        <!--Parent Name-->
+        <div class="form-group">
+            <label for="parentname">Parent's Name</label>
+            <input type="text" class="form-control" id="parentname" placeholder="parent's name">
+        </div>
+        <!--Email-->
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xxxx@example.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <!--Mobile-->
+        <div class="form-group">
+            <label for="exampleInputMobile">Mobile number</label>
+            <input type="text" class="form-control" id="textform" placeholder="input your mobile number">
+
+            <small id="mobilehelp" class="form-text text-muted">We'll never share your mobile number with anyone else.</small>
+        </div>
+        <!--Address-->
+           
+        <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+      
+        <div class="form-group col-md-4">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>NSW</option>
+                <option>QLD</option>
+                <option>SA</option>
+                <option>TAS</option>
+                <option>VIC</option>
+                <option>WA</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+      
+          
+        <!--Date-->
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect3">Date when care will be required (Begin Date)</label>
+        </div>
+        <div class="form-group col-md-4">
+            
+            <select id="day" class="form-control">
+                <option selected>DAY</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+           
+            <select id="month" class="form-control">
+                <option selected>MONTH</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            
+            <select id="year" class="form-control">
+                <option selected>YEAR</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+            </select>
+        </div>
+
+
+        <!--Due Date-->
+        
+        <div class="form-group">
+            <label for="exampleFormControlSelect3">Due Date (End Date)</label>
+        </div>
+        <div class="form-group col-md-4">
+            
+            <select id="day" class="form-control">
+                <option selected>DAY</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+           
+            <select id="month" class="form-control">
+                <option selected>MONTH</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            
+            <select id="year" class="form-control">
+                <option selected>YEAR</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+            </select>
+        </div>
+
+        <!--Days Required-->       
+        <div class="form-group">
+            <label for="week">Days required</label>
+            <p>
+	            <img src="images/icons/baby1.png" width="30">Monday: <input type="checkbox" name="weekdays" value="mon" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="images/icons/baby2.png" width="20">Tuesday: <input type="checkbox" name="weekdays" value="tue" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="images/icons/baby3.png" width="30">Wednesday: <input type="checkbox" name="weekdays" value="wed" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="images/icons/baby4.png" width="30">Thursday: <input type="checkbox" name="weekdays" value="thu" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="images/icons/baby5.png" width="30">Friday: <input type="checkbox" name="weekdays" value="fri" />
+            </p>
+        </div>
+           
+        <!--Special Needs-->
+      
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Special Needs</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="buttonsubmit">           
+            <input class="btn btn-warning btn-lg" type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</section>
+ 
+
+<img src="images/resource/color3.png" width="100%" height="10"  id="auburn">
+
+<section class="centrecontact" id="contact">
+    <div class="section-title center pb-60">
+        <h2>Contact Our <span>Auburn Centre</span> </h2>
+    </div>
+    <div class="modulecontact">
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/location2.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Visit Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >Shop M03, 265 Parramatta Rd,<br>Auburn</font>
+                   
+                </div> 
+            </div>
+        </div>
+
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/call1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Call Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >Phone: (02) 9648 6588<br>&nbsp;</font>
+                   
+                </div> 
+            </div>
+        </div>
+
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/email1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                   
+                    <h7>Email Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >minimiauburn@gmail.com<br>&nbsp;</font>
+                    
+                </div> 
+            </div>
+        </div>
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/time1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Opening Hours</h7><br>
+                   
+                    <font size="2" face="arial" color="#8373ce" >Mon – Fri 7.00 am – 6.00 pm<br>&nbsp;</font>
+                   
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Google map-->
+
+  
+<section class="centrecontact" id="campsiecontact">
+    <div class="section-title center pb-60">
+        <h2>Contact Our <span>Campsie Centre</span> </h2>
+    </div>
+    <div class="modulecontact">
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/location2.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Visit Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >26 Troy Street,<br>Campsie NSW 2194</font>
+                   
+                </div> 
+            </div>
+        </div>
+
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/call1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Call Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >Phone: (02) 8580 9588<br>&nbsp;</font>
+                   
+                </div> 
+            </div>
+        </div>
+
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/email1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                   
+                    <h7>Email Us</h7><br>
+                    
+                    <font size="2" face="arial" color="#8373ce" >minimicampsie@gmail.com<br>&nbsp;</font>
+                    
+                </div> 
+            </div>
+        </div>
+        <div class="contactblocks">
+            <div class="smallblocks">
+                <div class="iconpart">
+                    <img src="images/icons/time1.png" ><br><br>
+                </div>
+                <div class="iconpart">
+                    
+                    <h7>Opening Hours</h7><br>
+                   
+                    <font size="2" face="arial" color="#8373ce" >Mon – Fri 7.00 am – 6.00 pm<br>&nbsp;</font>
+                   
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Google map-->          
+
+<section class="footer">
+    <div class="footer-upper">
+        <div class="container">
+            <div class="row">
+                <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#8373ce,direction:145,strength:15)" width="100%" color="#8373ce" SIZE=3>
+                <br>
+                <aside class="blocks footer-blocks1">
+                    <div class="blocks-about">
+                        
+                        <h2><font color="#8373ce">About Us</font></h2>
+                        <br>
+                    </div>
+                    <div class="text-about">
+                        <p>Minimi Academy aims to <br>provide the highest quality <br>of childcare in the Auburn <br>and Campsie areas.<br> <br>Our childcare centres have <br>been carefully designed <br>using a combination of <br>research and insight from <br>architects, families and early <br>childhood professionals, <br>assisting in establishing our <br>vision and philosophy in <br>providing the highest quality <br>care in a safe and secure <br>environment.</p>
+                    </div>
+                </aside>
+
+
+                <aside class="blocks footer-blocks2">
+                    <div class="blocks-news">
+                        
+                        <h2><font color="#fBb54d">Latest News</font></h2>
+                        <br>
+                        
+                        <ul>
+                            <li>
+                                <span style="color:#8373ce; font-size:12px; display:inline-block; border-bottom:1px dotted; margin-bottom:5px; text-transform:uppercase">
+						            <a href="events"><font color="#fBb54d">General Events</font></a>                            </span>
+                                <h3><a class="pix-colrhvr" href="event1"><font color="#888888">Preschool Graduation 2018</font></a></h3>
+                          	    <p>November 21, 2018</p>
+                            </li>
+                           
+						    <li> 
+                        	    <span style="color:#fbb54d; font-size:12px; display:inline-block; border-bottom:1px dotted; margin-bottom:5px; text-transform:uppercase">
+							        <a href=""><font color="#fBb54d">Campsie Centre</font></a></span>
+                          	    <h3><a class="pix-colrhvr" href="event2"><font color="#888888">Family Early Education <br>and Care Awards</font></a></h3>
+                          	    <p>March 09, 2017</p>
+                            </li>
+
+                            <li> 
+                        	    <span style="color:#fbb54d; font-size:12px; display:inline-block; border-bottom:1px dotted; margin-bottom:5px; text-transform:uppercase">
+								    <a href=""><font color="#fBb54d">Auburn Centre</font></a> </span>
+                          	    <h3><a class="pix-colrhvr" href="event3"><font color="#888888">Early Childhood Director <br>of the Year</font></a></h3>
+                          	    <p>March 09, 2017</p>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                
+                <aside class="blocks footer-blocks3">
+                    <div class="blocks-links">
+                        
+                        <h2><font color="#adca69">Relevant Links</font></h2>
+                        <br>
+                        <ul>
+                            <li>
+                                <h3 style="color: #8373ce;"><a class="pix-colrhvr" href="http://www.acecqa.gov.au"><font color="#888888">ACECQA</font></a></h3>
+                          	    
+                            </li>
+
+                            <li> 
+                        	    <h3><a class="pix-colrhvr" href="https://www.humanservices.gov.au/individuals/services/centrelink/child-care-subsidy"><font color="#adca69">Child Caren Subsidy</font></a></h3>
+                          	    
+                            </li>
+
+                            <li> 
+                        	    <h3><a class="pix-colrhvr" href="http://www.facs.gov.au"><font color="#888888">FACS</font></a></h3>   
+                            </li>
+                          
+
+						    <li> 
+                        	    <h3><a class="pix-colrhvr" href="http://www.mychild.gov.au"><font color="#adca69">Child Care Government</font></a></h3>
+                            </li>
+                            <li> 
+                        	    <h3><a class="pix-colrhvr" href="https://education.nsw.gov.au/"><font color="#888888">NSW Department of Education</font></a></h3>
+                          	    
+                            </li>
+                           
+                        </ul>
+
+                    </div>
+                </aside>
+
+                <aside class="blocks footer-blocks4">
+                    <div class="blocks-facebook"><h2><font color="#84bed6">Facebook</font></h2>
+                    </div>			
+                    <div class="facebook">
+                      <div class="facebookOuter">
+                        <div class="facebookInner">
+                          <div class="fb-like-box fb_iframe_widget" data-height="300" data-width="265" data-href="https://www.facebook.com/Minimi-Academy-1401716340127956" data-border-color="#fff" data-show-faces="true" data-show-border="false" data-stream="true" data-header="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=213&amp;header=false&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2FMinimi-Academy-1401716340127956&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=true&amp;width=265"><span style="vertical-align: bottom; width: 265px; height: 300px;"><iframe name="f1217984e0547ac" width="265px" height="300px" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df3a2875619f892%26domain%3Dminimiacademy.com.au%26origin%3Dhttp%253A%252F%252Fminimiacademy.com.au%252Ff34c4a397ba6ed8%26relation%3Dparent.parent&amp;container_width=213&amp;header=false&amp;height=300&amp;href=https%3A%2F%2Fwww.facebook.com%2FMinimi-Academy-1401716340127956&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=true&amp;width=265" style="border: none; visibility: visible; width: 265px; height: 300px;" class=""></iframe></span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <script type="text/javascript">(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script> 
+                </aside>
+                <hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color=#8373ce,direction:145,strength:15)" width="100%" color="#8373ce" SIZE=3>
+            </div>
+                
+        </div>
+        
+    </div>
+
+    <div class="footer-bottom">
+         <div class="container">
+            <div class="row">
+                <div class="menu">
+                    <ul class="footermenu">
+                        <li>                          
+                            <a href="#"><font color="#8373ce" size="4">Home</font></a>
+                        </li>
+                        <li>
+                            <a href="about"><font color="#F8B54D" size="4">About Us</font></a>
+                        </li>
+                        <li>
+                            <a href="auburn"><font color="#fc5b4e" size="4">Centres</font></a>
+                            
+                        </li>
+                        <li>
+                            <a href="events"><font color="#adca69" size="4">Events</font></a>
+                        </li>
+                        <li>
+                            <a href="curriculum"><font color="#35a3f0" size="4">Curriculum</font></a>
+                        </li>
+                        <li>
+                            <a href="flexible"><font color="#c66196" size="4">Flexible Hours</font></a>
+                        </li>
+                        <li>
+                            <a href="enrolment"><font color="#84bed6" size="4">Enrolment/Contact Us</font></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    
+        <div class="copyright">
+            <p>Copyright@2019 Minimi Academy. Created by Company Pig+.<p>
+        </div>
+    </div>
+</section>
+
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></div>
+
+
+        <!-- jQuery js -->
+    <script src="assets/jquery/jquery-1.12.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery ui js -->
+    <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
+
+    <!-- wow js -->
+    <script src="assets/wow.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="assets/owl.carousel-2/owl.carousel.min.js"></script>              <!-- jquery.bxslider js -->
+    <script src="assets/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <!-- jQuery validation -->
+    <script src="assets/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- gmap.js helper -->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script>-->
+    <!-- gmap.js -->
+    <!--<script src="assets/gmaps.js"></script>-->
+    
+    <!-- mixit u -->
+    <script src="assets/jquery.mixitup.min.js"></script>
+    <script src="assets/isotope.pkgd.min.js"></script>
+    <script src="assets/jquery.countdown.min.js"></script>
+    <script src="assets/masterslider/masterslider.js"></script>
+    <script src="assets/SmoothScroll.js"></script>
+
+    <!-- revolution slider js -->
+    <script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script src="assets/Polyglot-Language-Switcher-master/js/jquery.polyglot.language.switcher.js"></script>
+    <script src="assets/fancyapps-fancyBox/source/jquery.fancybox.pack.js"></script>
+    <script src="assets/scrollbar.js"></script>
+    
+    <!--<script src="js/default-map-script.js"></script>-->
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
