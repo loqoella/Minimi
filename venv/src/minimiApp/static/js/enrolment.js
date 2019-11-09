@@ -222,7 +222,7 @@ submit_via_email = () => {
     }).catch(function (error) {
         console.log(error);
         alert(`Errors sending email, please check if the email address is correct. 
-            Alternatively, please contact us via minimiauburn@gmail.com`) 
+            Alternatively, please contact us via minimicampsie@gmail.com`) 
     });
 }
 
