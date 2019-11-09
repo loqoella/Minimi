@@ -110,6 +110,7 @@ def email_view(request):
         )
 
         yag.send('minimiacademy1@gmail.com', subject, body)
+
      
         return JsonResponse({'succeed':'ok'})
 

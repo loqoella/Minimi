@@ -43,10 +43,11 @@
 <script src="{% static 'js/script.js' %}" type="text/javascript"></script>  
 </head>
 <body class="about-page">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
 <div class="preloader"></div>
 
 <!--header-->
-
 <header class="header clearfix">
     <div class="main-header stricky bubble">
         <div class="container">
@@ -122,15 +123,14 @@
 
     <div class="formstyle">
         <div class="title">
-           
             <h2 >Enrolment&nbsp;&nbsp;Form</h2>
          </div>
     
         <form>
         <!--centre-->
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Which Centre you want to enrol</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="center_option">Which Center you want to enrol</label>
+            <select class="form-control" id="center_option">
               <option selected> </option>
               <option>Auburn Centre</option>
               <option>Campsie Centre</option>    
@@ -139,21 +139,20 @@
         <!--Child Name-->
         <div class="form-group">
             <label for="childname">Child's Name</label>
-            <input type="text" class="form-control" id="childname" placeholder="child's name">
+            <input type="text" class="form-control" id="child_name" placeholder="child's name">
         </div>
         <!--Child Gender-->
         <div class="form-group">
             <label for="exampleFormControlSelect2">Gender</label>
             <p>
-	            <img src="{% static 'images/icons/boy.png' %}" width="20">Boy: <input type="radio" name="gender" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	            <img src="{% static 'images/icons/girl.png' %}" width="20">Girl: <input type="radio" name="gender" /> 
+	            <img src="{% static 'images/icons/boy.png' %}" width="20">Boy: <input type="radio" name="gender" id="boy_radio"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="{% static 'images/icons/girl.png' %}" width="20">Girl: <input type="radio" name="gender" id="girl_radio"/> 
             </p>
-           
         </div>
         <!--Child Age-->
         <div class="form-group">
-            <label for="exampleFormControlSelect3">Child's Age</label>
-            <select class="form-control" id="exampleFormControlSelect3">
+            <label for="child_age">Child's Age</label>
+            <select class="form-control" id="child_age">
                 <option selected> </option>
                 <option>1</option>
                 <option>2</option>
@@ -165,31 +164,31 @@
         </div>
         <!--Parent Name-->
         <div class="form-group">
-            <label for="parentname">Parent's Name</label>
-            <input type="text" class="form-control" id="parentname" placeholder="parent's name">
+            <label for="parent_name">Parent's Name</label>
+            <input type="text" class="form-control" id="parent_name" placeholder="parent's name">
         </div>
         <!--Email-->
         <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xxxx@example.com">
+            <input type="email" class="form-control" id="email_address" placeholder="xxxx@example.com">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <!--Mobile-->
         <div class="form-group">
             <label for="exampleInputMobile">Mobile number</label>
-            <input type="text" class="form-control" id="textform" placeholder="input your mobile number">
+            <input type="text" class="form-control" id="mobile_num" placeholder="input your mobile number">
 
             <small id="mobilehelp" class="form-text text-muted">We'll never share your mobile number with anyone else.</small>
         </div>
         <!--Address-->
            
         <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
         </div>
         <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="address1">Address 2</label>
+            <input type="text" class="form-control" id="address1" placeholder="Apartment, studio, or floor">
         </div>
       
         <div class="form-group col-md-4">
@@ -215,7 +214,6 @@
       
           
         <!--Date-->
-
         <div class="form-group">
             <label for="exampleFormControlSelect3">Date when care will be required (Begin Date)</label>
         </div>
@@ -291,13 +289,12 @@
 
 
         <!--Due Date-->
-        
         <div class="form-group">
             <label for="exampleFormControlSelect3">Due Date (End Date)</label>
         </div>
         <div class="form-group col-md-4">
             
-            <select id="day" class="form-control">
+            <select id="due_day" class="form-control">
                 <option selected>DAY</option>
                 <option>1</option>
                 <option>2</option>
@@ -334,7 +331,7 @@
         </div>
         <div class="form-group col-md-4">
            
-            <select id="month" class="form-control">
+            <select id="due_month" class="form-control">
                 <option selected>MONTH</option>
                 <option>1</option>
                 <option>2</option>
@@ -352,7 +349,7 @@
         </div>
         <div class="form-group col-md-4">
             
-            <select id="year" class="form-control">
+            <select id="due_year" class="form-control">
                 <option selected>YEAR</option>
                 <option>2019</option>
                 <option>2020</option>
@@ -369,11 +366,11 @@
         <div class="form-group">
             <label for="week">Days required</label>
             <p>
-	            <img src="{% static 'images/icons/baby1.png' %}" width="30">Monday: <input type="checkbox" name="weekdays" value="mon" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	            <img src="{% static 'images/icons/baby2.png' %}" width="20">Tuesday: <input type="checkbox" name="weekdays" value="tue" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	            <img src="{% static 'images/icons/baby3.png' %}" width="30">Wednesday: <input type="checkbox" name="weekdays" value="wed" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	            <img src="{% static 'images/icons/baby4.png' %}" width="30">Thursday: <input type="checkbox" name="weekdays" value="thu" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="{% static 'images/icons/baby5.png' %}" width="30">Friday: <input type="checkbox" name="weekdays" value="fri" />
+	            <img src="{% static 'images/icons/baby1.png' %}" width="30">Monday: <input type="checkbox" name="weekdays" value="mon" id="monday"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="{% static 'images/icons/baby2.png' %}" width="20">Tuesday: <input type="checkbox" name="weekdays" value="tue" id="tuesday"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="{% static 'images/icons/baby3.png' %}" width="30">Wednesday: <input type="checkbox" name="weekdays" value="wed" id="wednesday"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	            <img src="{% static 'images/icons/baby4.png' %}" width="30">Thursday: <input type="checkbox" name="weekdays" value="thu" id="thursday"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="{% static 'images/icons/baby5.png' %}" width="30">Friday: <input type="checkbox" name="weekdays" value="fri"id="friday" />
             </p>
         </div>
            
@@ -385,7 +382,7 @@
         </div>
 
         <div class="buttonsubmit">           
-            <input class="btn btn-warning btn-lg" type="submit" value="Submit">
+            <input class="btn btn-warning btn-lg" type="submit" value="Submit" id="submit_button">
         </div>
         </form>
     </div>
@@ -685,6 +682,7 @@
 <!--Scroll to top-->
 <div class="scroll-to-top"><i class="fa fa-long-arrow-up"></i></div>
 
+<script src="{% static 'js/enrolment.js' %}" type="text/javascript"></script>  
 </body>
 </html>
 

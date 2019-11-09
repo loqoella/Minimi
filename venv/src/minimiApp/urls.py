@@ -45,7 +45,7 @@ urlpatterns = [
     # path('email/', email_view, name='email_feedback' ), 
 
     # for backend email sending
-    path('email', email_view, name='email_feedback' ),
+    path('email/', email_view, name='email_feedback' ),
 
 
     # path('create/', product_create_view, name='product-list'),
