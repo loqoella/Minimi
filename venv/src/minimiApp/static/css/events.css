@@ -1,0 +1,14 @@
+
+body {
+    background-color: blue;
+}
+
+.timeline{
+    padding-left: 300px;
+    left: 300px; 
+    margin-top: 5%;
+}
+
+
+/* transform: scale(3);  */
+/* background-color: pink; */
