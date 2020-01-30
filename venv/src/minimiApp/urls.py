@@ -29,6 +29,7 @@ urlpatterns = [
     path('auburn', auburn_view, name='auburn' ),
     path('campsie', campsie_view, name='campsie' ),
     path('events', events_view, name='events' ),
+    # path('events', lambda request: redirect('https://www.facebook.com/minimiacademy/')),
     path('event1', event1_view, name='event1' ),
     path('event2', event2_view, name='event2' ),
     path('event3', event3_view, name='event3' ),

@@ -1,5 +1,5 @@
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from rest_framework.decorators import api_view
 
 import yagmail
@@ -38,7 +38,8 @@ def campsie_view(request, *args, **kwargs):
 def events_view(request, *args, **kwargs): 
     print(args, kwargs)
     print(request.user)
-    return render(request, "events.html", {})
+    # return render(request, "events.html", {})
+    return redirect('https://www.facebook.com/minimiacademy/')
 
 def event1_view(request, *args, **kwargs):  
     print(args, kwargs)
