@@ -1,14 +1,22 @@
 
-body {
-    background-color: blue;
-}
 
 .timeline{
+
+    z-index:1;
     padding-left: 300px;
-    left: 300px; 
-    margin-top: 5%;
+    left: 7%; 
+    margin-top: -180px;
 }
 
+.overlay{
+    position: relative;
+    z-index: 2;
+    margin-top: 3%;
+    margin-left:20%;
+    background-color: #B5D6F7;
+    height: 220px;
+    width: 60%;
+}
 
 /* transform: scale(3);  */
 /* background-color: pink; */

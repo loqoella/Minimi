@@ -38,8 +38,8 @@ def campsie_view(request, *args, **kwargs):
 def events_view(request, *args, **kwargs): 
     print(args, kwargs)
     print(request.user)
-    # return render(request, "events.html", {})
-    return redirect('https://www.facebook.com/minimiacademy/')
+    return render(request, "events.html", {})
+    # return redirect('https://www.facebook.com/minimiacademy/')
 
 def event1_view(request, *args, **kwargs):  
     print(args, kwargs)
