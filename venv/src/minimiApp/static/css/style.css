@@ -4147,27 +4147,23 @@ end===================
 /*Events*/
 .events{
     position:relative;
-    
+    z-index: 1;
     /*background:url(../images/main-slider/1.jpg);*/
 }
 
 
 .events .eventblogs{
     position:relative;
-    padding:20px 200px 100px 200px;
-    
-
+    /* padding:20px 200px 100px 200px; */
 }
 
 
 .events .blog{
-    
     width: 310px;
     height: 500px;
-    margin: 0 100px 0 100px;
+    margin: 0 0px 0 0px;
     display: inline-block;
     vertical-align:top;
-    
 }
 
 .events .date-time{
@@ -4177,7 +4173,6 @@ end===================
     text-align:center;
     background-color:grey;
     padding: 10px 0 0 0;
-
 }
 
 .events .date-time strong {
@@ -4189,14 +4184,11 @@ end===================
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     padding: 10px 20px 10px 20px;
     background: url(../images/resource/pattern4.jpeg);
-
-  
 }
 
 .events .blogtext img{
     width: 40px;
     margin: 0 0 0 210px;
-  
 }
 
 

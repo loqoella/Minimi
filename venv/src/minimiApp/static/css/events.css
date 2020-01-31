@@ -1,21 +1,38 @@
 
 
 .timeline{
-
     z-index:1;
-    padding-left: 300px;
-    left: 7%; 
-    margin-top: -180px;
+    left: 100px; 
+    margin-top: -175px;
+    width:500px;
 }
 
 .overlay{
     position: relative;
     z-index: 2;
-    margin-top: 3%;
-    margin-left:20%;
+    margin-top:-400px;
+    margin-left: 100px;
+    /* background-color: black; */
     background-color: #B5D6F7;
-    height: 220px;
-    width: 60%;
+    height: 175px;
+    width: 500px;
+}
+
+.overlaid-timeline{
+    position: relative;
+    /* background-color: red; */
+    width:500px;
+}
+
+.big-table{
+    width: 800px;
+    /* background-color: green; */
+}
+
+.right-blogs{
+    position: relative;
+    margin-left: -100px;
+    /* background-color: purple; */
 }
 
 /* transform: scale(3);  */
