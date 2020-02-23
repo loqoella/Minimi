@@ -44,7 +44,7 @@
 <script src="{% static 'js/script.js' %}" type="text/javascript"></script>  
 </head>
 
-<body class="home-one">
+<body class="home-one" style="overflow-x:hidden;">
 <div class="preloader"></div>
 <header class="header clearfix">
     <div class="main-header stricky bubble">
@@ -128,7 +128,7 @@
         <ul>
             <!--Slider1-->
             <li class="gradient-overlay" data-transition="slotzoom-horizontal" data-slotamount="1" data-masterspeed="1000" data-thumb="{% static 'images/main-slider/footerkids.jpg' %}"  data-saveperformance="off"  data-title="Awesome Title Here">
-                <img src="{% static 'images/main-slider/footerkids.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                <img src="{% static 'images/Minimi/27-DSC06845.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                 
                 <div class="tp-caption lfl sfb tp-resizeme start"
                 data-x="left" data-hoffset="500"
@@ -160,7 +160,7 @@
                 data-elementdelay="0.01"
                 data-endelementdelay="0.3"
                 data-endspeed="1200"
-                data-endeasing="Power4.easeIn"><img src="{% static 'images/selected/DSC09500.jpg' %}" alt=""><img src="{% static 'images/resource/xxxx.jpg' %}" alt=""><img src="{% static 'images/resource/1.jpg' %}" alt=""></div>
+                data-endeasing="Power4.easeIn"><img src="{% static 'images/selected/small.jpg' %}" alt=""></div>
                 <!--right: description-->
                 <div class="tp-caption lft sfb tp-resizeme start"
                 data-x="right" data-hoffset="0"
@@ -268,7 +268,7 @@
             </div>
             <div class="single-column col-md-6 col-sm-12">  
                 <figure class="img-box">
-                    <a href="enrolment"><img src="{% static 'images/Minimi/163-DSC07115.jpg' %}" alt=""></a>
+                    <a href="enrolment"><img src="{% static 'images/selected/DSC09173.jpg' %}" alt=""></a>
                     <a href="enrolment"><div style="font-family: bubblegum; color: #F8B54D; font-size: 60px; position:absolute; left:260px; top:200px";>Enrol &nbsp;Now!</div></a>
                 </figure>
             </div>
@@ -281,10 +281,11 @@
 <section class="team">
     <div class="container">
         <div class="section-title center pb-60">
-            <h2>Our <span>Centres</span></h2>
+            <h2>Our <span>Centre</span></h2>
         </div>
-        <div class="team-list">
+        <div class="team-list" style="width:inherit;">
             <div class="row">
+                <!--
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" >
                     <div class="item">
                         <div class="img-holder">
@@ -295,13 +296,13 @@
                         </div>
                     </div>       
                 </div>
-
-                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn">
+                -->
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" style="text-align: -webkit-center; width:100%;"> 
                     <div class="item">
-                        <div class="img-holder">
-                            <figure><a href="#"><img src="{% static 'images/centre/campsiehome.jpg' %}" alt="Awesome Image"></a></figure>
+                        <div>
+                            <figure><a href="campsie"><img src="{% static 'images/Minimi/172-DSC07127.jpg' %}" alt="Awesome Image"></a></figure>
                             <div class="content">
-                                <h2><a href="#">Our Campsie Centre</a></h2>
+                                <h2><a href="campsie">Our Campsie Centre</a></h2>
                              
                             </div>
                         </div>

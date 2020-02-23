@@ -756,7 +756,6 @@ end===================
 
 .team .item .img-holder {
     position: relative;
-    transition: .5s ease;
 }
 
 .team .item:hover .img-holder .content {
