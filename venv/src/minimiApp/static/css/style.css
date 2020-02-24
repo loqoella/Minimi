@@ -27,6 +27,9 @@
 /*================== main header ===============*/
 
 .main-header {
+    /*The menu bar color (always white no matter how other overriding works) */
+    background-color:white !important;
+    
     position:relative;
     width:100%;
     left:0px;
@@ -4161,6 +4164,7 @@ end===================
     width: 310px;
     height: 500px;
     margin: 0 0px 0 0px;
+    top: -20px;
     display: inline-block;
     vertical-align:top;
 }
